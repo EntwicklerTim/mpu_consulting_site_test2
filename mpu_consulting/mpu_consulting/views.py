@@ -36,3 +36,6 @@ def Datenschutz(request):
 
 def AGB(request):
     return render(request, "AGB.html")
+
+def Widerrufsbelehrung(request):
+    return render(request, "Widerrufsbelehrung.html")

@@ -27,4 +27,5 @@ urlpatterns = [
     path('Impressum', views.Impressum, name="Impressum"),
     path('Datenschutz', views.Datenschutz, name="Datenschutz"),
     path('AGB', views.AGB, name="AGB"),
+    path('Widerrufsbelehrung', views.Widerrufsbelehrung, name="Widerrufsbelehrung"),
 ]
