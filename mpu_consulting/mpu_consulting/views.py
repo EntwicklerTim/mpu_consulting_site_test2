@@ -39,3 +39,4 @@ def AGB(request):
 
 def Widerrufsbelehrung(request):
     return render(request, "Widerrufsbelehrung.html")
+
