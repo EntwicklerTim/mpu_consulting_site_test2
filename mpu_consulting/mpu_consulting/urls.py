@@ -18,6 +18,9 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 from . import views
+from django.views.generic import RedirectView
+from django.conf.urls import url
+
 #from . import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -30,5 +33,8 @@ urlpatterns = [
     path('Datenschutz', views.Datenschutz, name="Datenschutz"),
     path('AGB', views.AGB, name="AGB"),
     path('Widerrufsbelehrung', views.Widerrufsbelehrung, name="Widerrufsbelehrung"),
+    path('cookies/', include('cookie_consent.urls')),
+
+
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)  #statische hintendran hängen sonst problem
 

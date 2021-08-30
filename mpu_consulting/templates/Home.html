@@ -1,18 +1,29 @@
 {% extends 'main.html' %}
- {% load static %}
-<body>
- {% block First_Container %}
+{% load static %}
+{% load cookielaw_tags %}
+
+{% block First_Container %}
+
 <div class="container-fluid bg-1 text-center">
   <h1 class="margin"><strong>On/Offline MPU Beratung</strong></h1>
   <h3>MPU-Beratung & MPU-Vorbereitung in Mannheim & online</h3>
 </div>
+  <script> src="/js/cookie_explanation.js"</script>
+
+      <!--<script src="static/js/cookie_explanation.js"></script>-->
 {% endblock First_Container %}
  {% block Second_Container %}
 <div class="container-fluid bg-2 text-center">
-  <h3 class="margin">persönlich</h3>
+  <h3 class="margin">persönlich
+      <!-- {% for x in daten_bank_objekte.all%}
+ {{x.name}}
+ {% endfor %}}-->
+
+  </h3>
     <h3 class="margin">kompetent</h3>
      <h3 class="margin">günstig</h3>
   </div>
 {% endblock Second_Container %}
+</body>
 
 
